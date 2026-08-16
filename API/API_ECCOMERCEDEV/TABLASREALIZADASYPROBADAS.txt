@@ -1,0 +1,57 @@
+[Tbl_Providers] los 5 sp ya probasdos actulice los sp de listar y filtrar para que 
+no listarn lo que estaban en id 0 eso no lo habia hecho anteriormente y 
+nadie lo habia notado 
+
+
+2. 
+tabla e usario ha consumido los 6 sp correctamnete
+tambien aqui habia la debulidad que listaba y filtraba los que estaban eliminados 
+agregue un nuevo sp para hacer el cambio de contraseña por que tampoc eso estaba 
+
+
+3.TABLA DE SEGMENTO REALIZADA CORRECTAMNETE CON TODO SUS FLUJOS  [SQM_CATALOGS].[Tbl_Segments]
+
+4.TABLA DE SUB CATEGORIA REALIZADA CORRECTAMENTE CON TODOS SUS FLUJOS [SQM_CATALOGS].[Tbl_SubCategories]
+
+5.TABLA PAYMENTMETHODTYPES REALIZADA CORRECTAMENTE CON TODOS SUS FLUJOS [SQM_CATALOGS].[Tbl_PaymentMethodTypes]
+
+6. TABLA DE PRODUCTO REALIZADA CORRECTAMENTE CON TODOS SUS FLUJOS [SQM_CATALOGS].[Tbl_Products]
+
+
+7.tabla de  [SQM_GENERAL].[Tbl_PaymentOrders] el de filtrar y el de listar se ha hecho correctamente epro el de insertar
+aun no se comproobo que inserte pero en el sp se si probo  dejo pendiente apra cuando llegue a crear un carrito 
+o57
+
+8.[SQM_GENERAL].[Tbl_StockMovements] realizada correctamente le agregue una vistacambiando los nombres 
+para evitar los  sql inyeccion segun lo que dijo el doente 
+
+9.tabla de modenas incluida correctamente con vista aqui tenog una idea para 
+el cliente vamos a hacer una selecion multiple para que solo selccione el nombre de la moneda 
+en caso que la queramos mostrar 
+
+
+10.  metodo de pago usuario actualizado correctamnete con sus 5 sp en funcionamiento
+
+
+11.tabla de marcas atulizada correctamente con sus 5 sp en funcionamiento
+
+
+12.me quedo frustado con la duda ; PaymentOrderDetails   el de listar y filtrar se hizo correctamente pero el de insertar   lo elimine y ya no se hace manual 
+
+
+ 13.vamos con detallestok
+ YA QUEDO NO HAY DE INSERCCION POR QUE ESO LO HACE REL CARRIOTO O EL DE LA ORDEN DE PAGO
+
+
+ 14. tabla de categorias de productos realizada correctamente con sus 5 sp en funcionamiento
+
+
+
+ tablas y sp hechas por ya 
+
+ 
+ los	u efaltab
+ marca por proveedo 
+ producto identicador 
+ varia producto typy 
+

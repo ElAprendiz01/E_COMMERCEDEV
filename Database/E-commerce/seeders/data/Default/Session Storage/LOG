@@ -1,0 +1,9 @@
+2026/08/12-22:26:13.413 303c Reusing MANIFEST C:\hector\E_COMMERCEDEV\Database\E-commerce\seeders\data\Default\Session Storage/MANIFEST-000001
+2026/08/12-22:26:13.418 303c Recovering log #4
+2026/08/12-22:26:13.420 303c Level-0 table #6: started
+2026/08/12-22:26:13.441 303c Level-0 table #6: 73527 bytes OK
+2026/08/12-22:26:13.442 303c Recovering log #6
+2026/08/12-22:26:13.443 303c Level-0 table #7: started
+2026/08/12-22:26:13.458 303c Level-0 table #7: 64341 bytes OK
+2026/08/12-22:26:13.468 303c Delete type=0 #4
+2026/08/12-22:26:13.468 303c Delete type=0 #6

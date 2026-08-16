@@ -1,0 +1,4 @@
+2026/08/12-22:13:13.164 26e4 Log #3: 5 ops saved to Table #4 OK
+2026/08/12-22:13:14.688 26e4 Archiving C:\hector\E_COMMERCEDEV\Database\E-commerce\seeders\data\Default\Site Characteristics Database/000003.log: IO error: C:\hector\E_COMMERCEDEV\Database\E-commerce\seeders\data\Default\Site Characteristics Database/000003.log: Could not rename file: File currently in use. (ChromeMethodBFE: 14::RenameFile::2)
+2026/08/12-22:13:14.688 26e4 Table #4: 5 entries OK
+2026/08/12-22:13:15.707 26e4 Archiving C:\hector\E_COMMERCEDEV\Database\E-commerce\seeders\data\Default\Site Characteristics Database/MANIFEST-000001: IO error: C:\hector\E_COMMERCEDEV\Database\E-commerce\seeders\data\Default\Site Characteristics Database/MANIFEST-000001: Could not rename file: File currently in use. (ChromeMethodBFE: 14::RenameFile::2)

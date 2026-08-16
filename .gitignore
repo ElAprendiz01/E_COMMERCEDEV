@@ -1,0 +1,57 @@
+# Visual Studio / VS Code
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# .NET
+[Bb]in/
+[Oo]bj/
+**/[Bb]in/
+**/[Oo]bj/
+
+# Node / React Native
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Expo
+.expo/
+.expo-shared/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Entornos virtuales
+venv/
+.venv/
+chatbot_api/venv/
+
+# Variables de entorno
+.env
+.env.*
+
+# Sistema
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Notas privadas
+*.mdvenv/
+chatbot_api/venv/
+__pycache__/
+*.pyc
+.env
+Desktop.ini
+.agent/
+.agents/
+**/.agent/
+**/.agents/
+*.md
+venv/
+**/venv/

@@ -1,0 +1,34 @@
+USE [DB_ECOMMERCE]
+GO
+
+--------------------------------------
+/* FUNCION ESCALAR PARA ENCRIPTADO  */
+--------------------------------------
+CREATE OR ALTER FUNCTION [SQM_SECURITY].Fn_EncryptByKey
+(
+	@UnencryptedValue VARCHAR(256)
+)
+RETURNS VARBINARY(256)
+AS
+BEGIN
+	DECLARE @EncryptedValue VARBINARY(256);
+	SET @EncryptedValue = ENCRYPTBYKEY(KEY_GUID('KEY_HASH'), @UnencryptedValue);
+	RETURN @EncryptedValue;
+END
+GO
+
+----------------------------------------
+/* FUNCION ESCALAR PARA DESENCRIPTADO */
+----------------------------------------
+CREATE OR ALTER FUNCTION [SQM_SECURITY].Fn_DecryptByKey
+(
+	@EncryptedValue VARBINARY(256)
+)
+RETURNS VARCHAR(256)
+AS
+BEGIN
+	DECLARE @UnencryptedValue VARCHAR(256);
+	SET @UnencryptedValue = CONVERT(VARCHAR(256), DECRYPTBYKEY(@EncryptedValue));
+	RETURN @UnencryptedValue;
+END
+GO

@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/TEMPORALES/">
+    <File Path="introducciones.md" />
+    <File Path="nombres_y_sp_solo_los_paramtros.md" />
+    <File Path="TABLASREALIZADASYPROBADAS.txt" />
+  </Folder>
+  <Project Path="APLICATION/APLICATION.csproj" />
+  <Project Path="DOMAIN/DOMAIN.csproj" />
+  <Project Path="INFRASTRUCTURE/INFRASTRUCTURE.csproj" />
+  <Project Path="PRESENTACION/PRESENTACION.csproj" />
+</Solution>

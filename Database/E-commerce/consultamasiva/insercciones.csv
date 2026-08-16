@@ -1,0 +1,414 @@
+﻿TABLA
+-----------------------------------
+--- [SQM_CATALOGS].[Tbl_Status] ---
+
+(1 row affected)
+
+statusId    statusName                                         statusCreatorId statusCreationDate      statusStatusId
+----------- -------------------------------------------------- --------------- ----------------------- --------------
+1           ACTIVO                                             1               2026-06-09 21:18:03.497 1
+2           INACTIVO                                           1               2026-06-09 21:18:03.497 1
+3           BLOQUEADO                                          1               2026-06-09 21:18:03.497 1
+4           PROCESADO                                          1               2026-06-09 21:18:03.497 1
+5           ENTREGADO                                          1               2026-06-09 21:18:03.497 1
+6           ANULADO                                            1               2026-06-09 21:18:03.497 1
+
+(6 rows affected)
+
+TABLA
+---------------------------------------
+--- [SQM_CATALOGS].[Tbl_Categories] ---
+
+(1 row affected)
+
+categoryId  categoryName                                       categoryDescription                                                                                  categoryCreatorId categoryCreationDate    categoryModificatorId categoryModificationDate categoryStatusId
+----------- -------------------------------------------------- ---------------------------------------------------------------------------------------------------- ----------------- ----------------------- --------------------- ------------------------ ----------------
+1           CALZADO                                            CALZADO EN GENERAL                                                                                   1                 2026-06-09 21:29:52.053 NULL                  NULL                     1
+2           ROPA                                               ROPA EN GENERAL                                                                                      1                 2026-06-09 21:29:52.053 NULL                  NULL                     1
+3           TECNOLOGIA                                         TECNOLOGIA EN GENERAL                                                                                1                 2026-06-09 21:29:52.053 NULL                  NULL                     1
+4           ACCESORIOS                                         ACCESORIOS EN GENERAL                                                                                1                 2026-06-09 21:29:52.053 NULL                  NULL                     1
+5           ELECTRODOMESTICOS                                  Aparatos eléctricos para el hogar                                                                    1                 2026-06-10 21:58:31.770 NULL                  NULL                     1
+6           CALZADOS DEPORTIVOS                                Calzado deportivo en general                                                                         1                 2026-06-10 21:59:33.970 1                     2026-06-12 18:41:04.540  0
+
+(6 rows affected)
+
+TABLA
+------------------------------------------
+--- [SQM_CATALOGS].[Tbl_SubCategories] ---
+
+(1 row affected)
+
+subCategoryId subCategoryName                                    subCategoryDescription                                                                               subCategoryCreatorId subCategoryCreationDate subCategoryModificatorId subCategoryModificationDate subCategoryStatusId
+------------- -------------------------------------------------- ---------------------------------------------------------------------------------------------------- -------------------- ----------------------- ------------------------ --------------------------- -------------------
+1             MASCULINO                                          ROPA MASCULINA                                                                                       1                    2026-06-09 21:29:57.790 NULL                     NULL                        1
+2             FEMENINO                                           ROPA FEMENINA                                                                                        1                    2026-06-09 21:29:57.790 NULL                     NULL                        1
+3             NIÑOS                                              ROPA PARA NIÑOS                                                                                      1                    2026-06-09 21:29:57.790 NULL                     NULL                        1
+4             NIÑAS                                              ROPA PARA NIÑAS                                                                                      1                    2026-06-09 21:29:57.790 NULL                     NULL                        1
+5             CELULARES                                          CELULARES EN GENERAL                                                                                 1                    2026-06-09 21:29:57.790 NULL                     NULL                        1
+6             COMPUTADORAS                                       COMPUTADORAS EN GENERAL                                                                              1                    2026-06-09 21:29:57.790 NULL                     NULL                        1
+7             Hardware y Periféricos                             Componentes internos y dispositivos externos actualizados.                                           1                    2026-06-13 20:06:35.777 1                        2026-06-13 20:09:55.083     0
+8             Componentes de Laptop                              Memorias RAM, discos sólidos, pantallas y teclados.                                                  1                    2026-06-13 20:10:49.440 NULL                     NULL                        1
+
+(8 rows affected)
+
+TABLA
+-------------------------------------
+--- [SQM_CATALOGS].[Tbl_Segments] ---
+
+(1 row affected)
+
+segmentId   segmentName                                        segmentDescription                                                                                   segmentCreatorId segmentCreationDate     segmentModificatorId segmentModificationDate segmentStatusId
+----------- -------------------------------------------------- ---------------------------------------------------------------------------------------------------- ---------------- ----------------------- -------------------- ----------------------- ---------------
+1           DEPORTIVO                                          SEGMENTO DEPORTIVO                                                                                   1                2026-06-09 21:30:04.570 NULL                 NULL                    1
+2           CASUAL                                             SEGMENTO CASUAL                                                                                      1                2026-06-09 21:30:04.570 NULL                 NULL                    1
+3           ELEGANTE                                           SEGMENTO ELEGANTE                                                                                    1                2026-06-09 21:30:04.570 NULL                 NULL                    1
+4           OFICINA                                            SEGMENTO OFICINA                                                                                     1                2026-06-09 21:30:04.570 NULL                 NULL                    1
+5           GAMING                                             SEGMENTO GAMING                                                                                      1                2026-06-09 21:30:04.570 NULL                 NULL                    1
+6           HOGAR                                              SEGMENTO HOGAR                                                                                       1                2026-06-09 21:30:04.570 NULL                 NULL                    1
+7           LAPTOS                                             SEGMENTO LAPTOS                                                                                      1                2026-06-09 21:30:04.570 NULL                 NULL                    1
+8           REPUESTOS                                          SEGMENTO REPUESTOS                                                                                   1                2026-06-09 21:30:04.570 NULL                 NULL                    1
+9           Tecnología Premium Plus                            Segmento enfocado en productos de alta gama, corporativos y servidores.                              1                2026-06-13 20:30:18.830 1                    2026-06-13 20:33:13.330 0
+
+(9 rows affected)
+
+TABLA
+--------------------------------------------------
+--- [SQM_CATALOGS].[Tbl_ProductIdentificators] ---
+
+(1 row affected)
+
+productIdentificatorId productIdentificatorCategoryId productIdentificatorSubCategoryId productIdentificatorSegmentId productIdentificatorCreatorId productIdentificatorCreationDate productIdentificatorModificatorId productIdentificatorModificationDate productIdentificatorStatusId
+---------------------- ------------------------------ --------------------------------- ----------------------------- ----------------------------- -------------------------------- --------------------------------- ------------------------------------ ----------------------------
+1                      1                              1                                 1                             1                             2026-06-09 21:30:11.270          NULL                              NULL                                 1
+2                      1                              2                                 1                             1                             2026-06-09 21:30:11.270          NULL                              NULL                                 1
+3                      1                              3                                 1                             1                             2026-06-09 21:30:11.270          NULL                              NULL                                 1
+4                      1                              4                                 1                             1                             2026-06-09 21:30:11.270          NULL                              NULL                                 1
+5                      2                              1                                 1                             1                             2026-06-09 21:30:11.270          NULL                              NULL                                 1
+6                      2                              2                                 1                             1                             2026-06-09 21:30:11.270          NULL                              NULL                                 1
+7                      2                              3                                 1                             1                             2026-06-09 21:30:11.270          NULL                              NULL                                 1
+8                      2                              4                                 1                             1                             2026-06-09 21:30:11.270          NULL                              NULL                                 1
+9                      3                              5                                 4                             1                             2026-06-09 21:30:11.270          NULL                              NULL                                 1
+10                     3                              5                                 5                             1                             2026-06-09 21:30:11.270          NULL                              NULL                                 1
+11                     3                              6                                 4                             1                             2026-06-09 21:30:11.270          NULL                              NULL                                 1
+12                     3                              6                                 5                             1                             2026-06-09 21:30:11.270          NULL                              NULL                                 1
+13                     3                              6                                 7                             1                             2026-06-09 21:30:11.270          NULL                              NULL                                 1
+
+(13 rows affected)
+
+TABLA
+--------------------------------------
+--- [SQM_CATALOGS].[Tbl_Providers] ---
+
+(1 row affected)
+
+providerId  providerName                                       providerDescription                                                                                  providerCreatorId providerCreationDate    providerModificatorId providerModificationDate providerStatusId
+----------- -------------------------------------------------- ---------------------------------------------------------------------------------------------------- ----------------- ----------------------- --------------------- ------------------------ ----------------
+1           DISTRIBUIDORA ADIDAS                               Proveedor mayorista de calzado y ropa Adidas                                                         1                 2026-06-09 22:12:00.220 NULL                  NULL                     1
+2           DISTRIBUIDORA NIKE                                 Proveedor oficial de productos Nike                                                                  1                 2026-06-09 22:12:00.220 NULL                  NULL                     1
+3           COMPU SOLUCIONES                                   Proveedor de hardware y laptops                                                                      1                 2026-06-09 22:12:00.220 NULL                  NULL                     1
+4           Proveedor Global Tech Internacional                Distribuidor mayorista oficial con cobertura regional.                                               1                 2026-06-13 20:19:52.323 1                     2026-06-13 20:23:11.750  0
+
+(4 rows affected)
+
+TABLA
+----------------------------------
+--- [SQM_CATALOGS].[Tbl_Marks] ---
+
+(1 row affected)
+
+markId      markName                                           markDescription                                                                                      markCreatorId markCreationDate        markModificatorId markModificationDate    markStatusId
+----------- -------------------------------------------------- ---------------------------------------------------------------------------------------------------- ------------- ----------------------- ----------------- ----------------------- ------------
+1           ADIDAS ORIGINALS                                   Línea clásica de calzado y ropa deportiva Adidas                                                     1             2026-06-09 22:12:06.030 1                 2026-06-11 20:05:01.280 0
+2           NIKE                                               Marca Nike global                                                                                    1             2026-06-09 22:12:06.030 NULL              NULL                    1
+3           DELL                                               Marca de computadoras Dell                                                                           1             2026-06-09 22:12:06.030 NULL              NULL                    1
+4           PUMA                                               Marca de calzado y ropa deportiva Puma                                                               1             2026-06-11 20:01:07.987 NULL              NULL                    1
+
+(4 rows affected)
+
+TABLA
+--------------------------------------------
+--- [SQM_CATALOGS].[Tbl_MarkByProviders] ---
+
+(1 row affected)
+
+markByProviderId markByProviderMarkId markByProviderProviderId markByProviderCreatorId markByProviderCreationDate markByProviderModificatorId markByProviderModificationDate markByProviderStatusId
+---------------- -------------------- ------------------------ ----------------------- -------------------------- --------------------------- ------------------------------ ----------------------
+1                1                    1                        1                       2026-06-09 22:12:13.687    NULL                        NULL                           1
+2                2                    2                        1                       2026-06-09 22:12:13.687    NULL                        NULL                           1
+3                3                    3                        1                       2026-06-09 22:12:13.687    NULL                        NULL                           1
+
+(3 rows affected)
+
+TABLA
+--------------------------------------------
+--- [SQM_CATALOGS].[Tbl_AttributesTypes] ---
+
+(1 row affected)
+
+attributeTypeId attributeTypeName                                  attributeTypeDescription                                                                             attributeTypeCreatorId attributeTypeCreationDate attributeTypeModificatorId attributeTypeModificationDate attributeTypeStatusId
+--------------- -------------------------------------------------- ---------------------------------------------------------------------------------------------------- ---------------------- ------------------------- -------------------------- ----------------------------- ---------------------
+
+(0 rows affected)
+
+TABLA
+----------------------------------------------
+--- [SQM_CATALOGS].[Tbl_AttributeProducts] ---
+
+(1 row affected)
+
+AttributeProductId AttributeProductAttributesTypeId AttributeProductName                               AttributeProductDescription                                                                          AttributeProductCreatorId AttributeProductCreationDate AttributeProductModificatorId AttributeProductModificationDate AttributeProductStatusId
+------------------ -------------------------------- -------------------------------------------------- ---------------------------------------------------------------------------------------------------- ------------------------- ---------------------------- ----------------------------- -------------------------------- ------------------------
+
+(0 rows affected)
+
+TABLA
+-------------------------------------------------
+--- [SQM_CATALOGS].[Tbl_ProductVariableTypes] ---
+
+(1 row affected)
+
+productVariableTypeId productVariableTypeName                            productVariableTypeDescription                                                                       productVariableTypeCreatorId productVariableTypeCreationDate productVariableTypeModificatorId productVariableTypeModificationDate productVariableTypeStatusId
+--------------------- -------------------------------------------------- ---------------------------------------------------------------------------------------------------- ---------------------------- ------------------------------- -------------------------------- ----------------------------------- ---------------------------
+
+(0 rows affected)
+
+TABLA
+---------------------------------------
+--- [SQM_CATALOGS].[Tbl_Currencies] ---
+
+(1 row affected)
+
+currencyId  currencyName                                       currencyISO currencyCode currencyDescription                                                                                  currencyCreatorId currencyCreationDate    currencyModificatorId currencyModificationDate currencyStatusId
+----------- -------------------------------------------------- ----------- ------------ ---------------------------------------------------------------------------------------------------- ----------------- ----------------------- --------------------- ------------------------ ----------------
+1           DOLAR ESTADOUNIDENSE                               USD         840          Dólar de los Estados Unidos                                                                          1                 2026-06-09 22:12:20.630 NULL                  NULL                     1
+2           Córdoba Oro                                        NIO         558          Moneda nacional de Nicaragua                                                                         1                 2026-06-09 22:12:20.630 1                     2026-06-11 20:14:46.917  1
+3           Euro                                               EUR         978          Moneda oficial de Europa                                                                             1                 2026-06-11 20:12:52.620 1                     2026-06-11 20:16:10.447  0
+
+(3 rows affected)
+
+TABLA
+-----------------------------------------------
+--- [SQM_CATALOGS].[Tbl_PaymentMethodTypes] ---
+
+(1 row affected)
+
+paymentMethodTypeId paymentMethodTypeName                              paymentMethodTypeDescription                                                                         paymentMethodTypeCreatorId paymentMethodTypeCreationDate paymentMethodTypeModificatorId paymentMethodTypeModificationDate paymentMethodTypeStatusId
+------------------- -------------------------------------------------- ---------------------------------------------------------------------------------------------------- -------------------------- ----------------------------- ------------------------------ --------------------------------- -------------------------
+1                   TARJETA DE CREDITO                                 Visa/Mastercard de crédito                                                                           1                          2026-06-09 22:12:46.557       NULL                           NULL                              1
+2                   TARJETA DE DEBITO                                  Visa/Mastercard de débito                                                                            1                          2026-06-09 22:12:46.557       NULL                           NULL                              1
+
+(2 rows affected)
+
+TABLA
+-----------------------------------------------
+--- [SQM_CATALOGS].[Tbl_StockMovementTypes] ---
+
+(1 row affected)
+
+stockMovementTypeId stockMovementTypeName                              stockMovementTypeDescription                                                                         stockMovementTypeCreatorId stockMovementTypeCreationDate stockMovementTypeModificatorId stockMovementTypeModificationDate stockMovementTypeStatusId
+------------------- -------------------------------------------------- ---------------------------------------------------------------------------------------------------- -------------------------- ----------------------------- ------------------------------ --------------------------------- -------------------------
+1                   ENTRADA POR COMPRA                                 Ingreso de mercadería de un proveedor                                                                1                          2026-06-09 21:30:16.617       NULL                           NULL                              1
+2                   SALIDA POR VENTA                                   Despacho de mercadería por orden de cliente                                                          1                          2026-06-09 21:30:16.617       NULL                           NULL                              1
+3                   AJUSTE POSITIVO                                    Suma al inventario por descuadre o devolución                                                        1                          2026-06-09 21:30:16.617       NULL                           NULL                              1
+4                   AJUSTE NEGATIVO                                    Resta al inventario por merma, daño o pérdida                                                        1                          2026-06-09 21:30:16.617       NULL                           NULL                              1
+
+(4 rows affected)
+
+TABLA
+----------------------------------
+--- [SQM_SECURITY].[Tbl_Users] ---
+
+(1 row affected)
+
+userId      userFullName                                                                                         userName                                           userPassword                                                                                                                                                                                                                                                       userEmail                                                                        userPhoneNumber      userCountryId userGenderId userBirthDay userCreatorId userCreationDate        userModificatorId userModificationDate    userStatusId
+----------- ---------------------------------------------------------------------------------------------------- -------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -------------------------------------------------------------------------------- -------------------- ------------- ------------ ------------ ------------- ----------------------- ----------------- ----------------------- ------------
+1           HECTOR JOSE CALERO ALANIZ                                                                            HCALERO                                            0x007C33A40F6609459D6AD9FDFA81DAF60200000064297B1C853F6A8D470E237D72F8FA3ED9CDDA74E6E5D76D7B10ADE75E6149FA                                                                                                                                                         hcalero@udem.edu.ni                                                              88887777             1             2            2000-05-12   1             2026-06-09 21:28:28.657 1                 2026-06-11 20:30:36.043 1
+2           DAVID JOSHUA JIMENEZ URBINA                                                                          DURBINA                                            0x007C33A40F6609459D6AD9FDFA81DAF60200000064297B1C853F6A8D470E237D72F8FA3ED9CDDA74E6E5D76D7B10ADE75E6149FA                                                                                                                                                         durbina@dominio.local                                                            99999999             1             2            1995-10-21   1             2026-06-09 21:28:28.657 NULL              NULL                    1
+3           Duclis RAMON Zamora LOPEZ                                                                            Rduc                                               0x007C33A40F6609459D6AD9FDFA81DAF602000000F5C51B8688D300030959772DD87B099B1E092DC6838F24B007C228CAD4CE8045CFEC1C52BE02D90F4EEE095D252B40B5                                                                                                                         Dperez@dominio.local                                                             88889999             1             2            1998-06-15   1             2026-06-11 20:26:57.407 1                 2026-06-11 20:51:02.607 2
+
+(3 rows affected)
+
+TABLA
+---------------------------------------
+--- [SQM_GENERAL].[Tbl_UserAddress] ---
+
+(1 row affected)
+
+userAddressId userAddressUserId userAddressCountryId userAddressZIPCode userAddressDescription                                                                                                                                                                                                                                           userAddressIsPrincipal userAddressCreatorId userAddressCreationDate userAddressModificatorId userAddressModificationDate userAddressStatusId
+------------- ----------------- -------------------- ------------------ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------- -------------------- ----------------------- ------------------------ --------------------------- -------------------
+1             1                 1                    1001               Ciudad el Doral, Mateare                                                                                                                                                                                                                                         0                      1                    2026-06-09 21:29:44.520 NULL                     NULL                        1
+2             2                 1                    1002               Ciudad Sandino, Managua                                                                                                                                                                                                                                          1                      1                    2026-06-09 21:29:44.520 NULL                     NULL                        1
+3             1                 1                    12001              De la rotonda Centroamérica 2 cuadras al norte, Managua                                                                                                                                                                                                          0                      1                    2026-06-11 19:29:58.537 NULL                     NULL                        1
+4             1                 1                    12002              De los semáforos de la UCA 1 cuadra al este, Managua                                                                                                                                                                                                             1                      1                    2026-06-11 19:30:02.337 1                        2026-06-11 19:39:18.363     1
+
+(4 rows affected)
+
+TABLA
+----------------------------------------------
+--- [SQM_GENERAL].[Tbl_UserPaymentMethods] ---
+
+(1 row affected)
+
+userPaymentMethodId userPaymentMethodUserId userPaymentMethodPaymentMethodTypeId userPaymentMethodCardNumber                                                                                                                                                                                                                                        userPaymentMethodExpirationDate                                                                                                                                                                                                                                    userPaymentMethodCVV                                                                                                                                                                                                                                               userPaymentMethodCardHolderName                                                                      userPaymentMethodCreatorId userPaymentMethodCreationDate userPaymentMethodModificatorId userPaymentMethodModificationDate userPaymentMethodStatusId
+------------------- ----------------------- ------------------------------------ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------------------------------------------------------------------------- -------------------------- ----------------------------- ------------------------------ --------------------------------- -------------------------
+1                   1                       1                                    0x007C33A40F6609459D6AD9FDFA81DAF6020000001E1BAA94A71B1FAB8656547EC6C88C1D4EF893BC9DF92F56EE8B9D2C341EF920C5B5C49421F1B3985B10D5E8E8898884                                                                                                                         0x007C33A40F6609459D6AD9FDFA81DAF60200000065FC8DD69F2ABCD57E2292AD731A34126B90108D31CB73FA874D33F88BF209D3                                                                                                                                                         0x007C33A40F6609459D6AD9FDFA81DAF60200000099FF57C40DF0BE91F9E7B4C14E43CA02BB342E5151B99B0640A7035439D2CAC3                                                                                                                                                         HECTOR JOSE CALERO ALANIZ                                                                            1                          2026-06-09 22:12:54.020       NULL                           NULL                              1
+2                   2                       2                                    0x007C33A40F6609459D6AD9FDFA81DAF602000000C5A965F07C403E86612DD1B5C81A98F1884B537B7F5A85439D59397A0BE32DC28CB639476133679B81762038DA99773A                                                                                                                         0x007C33A40F6609459D6AD9FDFA81DAF602000000E98AEC7972DFC4C9037C7940E3E443DE0D2DB32A0A351132112F6CEBD015E0E2                                                                                                                                                         0x007C33A40F6609459D6AD9FDFA81DAF60200000012ECE3C58775B107AF80E3BD4434F1960AC64C08523BBF7031AD3493929C7CCC                                                                                                                                                         DAVID JOSHUA JIMENEZ URBINA                                                                          1                          2026-06-09 22:12:54.020       NULL                           NULL                              1
+3                   1                       1                                    0x007C33A40F6609459D6AD9FDFA81DAF602000000CB73AC523E34FC166132AB64611B3DECB1D4F003CE3984E32E999C9CA7FF2D1B4CE3E7210831FB808C3F41388746805C                                                                                                                         0x007C33A40F6609459D6AD9FDFA81DAF6020000005E8C1B4E0459961FDD5A74E4AEB70FAEED16E4232A6874129A0EFA8D50F21C03                                                                                                                                                         0x007C33A40F6609459D6AD9FDFA81DAF60200000067C7BB67D26A07F187E9575DAFCBC5CE6BAEF1573AB00CE1385CF41D5EA70108                                                                                                                                                         Hector Calero                                                                                        1                          2026-06-13 21:02:55.270       1                              2026-06-13 21:34:10.390           0
+
+(3 rows affected)
+
+TABLA
+------------------------------------
+--- [SQM_GENERAL].[Tbl_Products] ---
+
+(1 row affected)
+
+productId   productName                                        productDescription                                                                                                                                                                                       productProductIdentificatorId productMarkByProviderId productCreatorId productCreationDate     productModificatorId productModificationDate productStatusId
+----------- -------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------- ----------------------- ---------------- ----------------------- -------------------- ----------------------- ---------------
+1           RUNNING ULTRABOOST 22                              Zapatos para correr Ultraboost 22                                                                                                                                                                        1                             1                       1                2026-06-09 22:12:26.373 NULL                 NULL                    1
+2           AIR MAX 90 CASUAL                                  Zapatos Nike Air Max 90                                                                                                                                                                                  2                             2                       1                2026-06-09 22:12:26.373 NULL                 NULL                    1
+3           DELL INSPIRON 15                                   Laptop Dell Inspiron 15 Core i5                                                                                                                                                                          13                            3                       1                2026-06-09 22:12:26.373 NULL                 NULL                    1
+4           Laptop Gamer X10 4854                              Procesador de última generación, 16GB RAM, 1TB SSD.                                                                                                                                                      1                             1                       1                2026-06-13 17:08:05.493 NULL                 NULL                    1
+5           Laptop Dell Latitude Inspiron                      Mega Ultra Core - Actualizado                                                                                                                                                                            1                             1                       1                2026-06-13 17:21:27.430 1                    2026-06-13 17:28:32.760 0
+
+(5 rows affected)
+
+TABLA
+-----------------------------------------
+--- [SQM_GENERAL].[Tbl_ProductImages] ---
+
+(1 row affected)
+
+productImageId productImageProductId productImageURL                                                                                                                                                                                          productImageDescription                                                                              productImageIsPrincipal productImageCreatorId productImageCreationDate productImageModificatorId productImageModificationDate productImageStatusId
+-------------- --------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------- ----------------------- --------------------- ------------------------ ------------------------- ---------------------------- --------------------
+
+(0 rows affected)
+
+TABLA
+--------------------------------------------
+--- [SQM_GENERAL].[Tbl_ProductVariables] ---
+
+(1 row affected)
+
+productVariableId productVariableProductId productVariableValue                               productVariablePrice                    productVariableCurrencyId productVariableCreatorId productVariableCreationDate productVariableModificatorId productVariableModificationDate productVariableStatusId
+----------------- ------------------------ -------------------------------------------------- --------------------------------------- ------------------------- ------------------------ --------------------------- ---------------------------- ------------------------------- -----------------------
+1                 1                        TALLA 42 (9.5 US)                                  180.00                                  1                         1                        2026-06-09 22:12:35.960     NULL                         NULL                            1
+2                 1                        TALLA 43 (10 US)                                   180.00                                  1                         1                        2026-06-09 22:12:35.960     NULL                         NULL                            1
+3                 2                        TALLA 38 (7 US)                                    140.00                                  1                         1                        2026-06-09 22:12:35.960     NULL                         NULL                            1
+4                 3                        8GB RAM - 512GB SSD                                650.00                                  1                         1                        2026-06-09 22:12:35.960     NULL                         NULL                            1
+5                 1                        8GB RAM - 256GB SSD                                450.00                                  1                         1                        2026-06-13 18:09:58.403     1                            2026-06-13 20:02:51.617         0
+
+(5 rows affected)
+
+TABLA
+-----------------------------------------------------
+--- [SQM_GENERAL].[Tbl_AttributeProductVariables] ---
+
+(1 row affected)
+
+attributeProductVariableId attributeProductVariableProductVariableId attributeProductVariableAttributeProductId attributeProductVariableValue                      attributeProductVariableCreatorId attributeProductVariableCreationDate attributeProductVariableModificatorId attributeProductVariableModificationDate attributeProductVariableStatusId
+-------------------------- ----------------------------------------- ------------------------------------------ -------------------------------------------------- --------------------------------- ------------------------------------ ------------------------------------- ---------------------------------------- --------------------------------
+
+(0 rows affected)
+
+TABLA
+----------------------------------
+--- [SQM_GENERAL].[Tbl_Stocks] ---
+
+(1 row affected)
+
+stockId     stockProductVariableId stockQuantity stockFactoryDate stockExpirationDate stockCreatorId stockCreationDate       stockModificatorId stockModificationDate   stockStatusId
+----------- ---------------------- ------------- ---------------- ------------------- -------------- ----------------------- ------------------ ----------------------- -------------
+1           1                      25            2025-01-01       2030-01-01          1              2026-06-09 22:12:41.203 NULL               NULL                    1
+2           2                      30            2025-01-01       2030-01-01          1              2026-06-09 22:12:41.203 NULL               NULL                    1
+3           3                      15            2025-02-01       2030-02-01          1              2026-06-09 22:12:41.203 NULL               NULL                    1
+4           4                      10            2025-03-01       2030-03-01          1              2026-06-09 22:12:41.203 NULL               NULL                    1
+
+(4 rows affected)
+
+TABLA
+---------------------------------
+--- [SQM_GENERAL].[Tbl_Carts] ---
+
+(1 row affected)
+
+cartId      cartUserId  cartCreatorId cartCreationDate        cartModificatorId cartModificationDate    cartStatusId
+----------- ----------- ------------- ----------------------- ----------------- ----------------------- ------------
+1           1           1             2026-06-10 21:41:34.320 1                 2026-06-10 22:21:24.193 1
+
+(1 row affected)
+
+TABLA
+---------------------------------------
+--- [SQM_GENERAL].[Tbl_CartDetails] ---
+
+(1 row affected)
+
+cartDetailId cartDetailCartId cartDetailProductVariableId cartDetailPrice                         cartDetailQuantity cartDetailDiscount                      cartDetailSubTotal                      cartDetailTAX                           cartDetailTotal                         cartDetailCurrencyId cartDetailCreatorId cartDetailCreationDate  cartDetailModificatorId cartDetailModificationDate cartDetailStatusId
+------------ ---------------- --------------------------- --------------------------------------- ------------------ --------------------------------------- --------------------------------------- --------------------------------------- --------------------------------------- -------------------- ------------------- ----------------------- ----------------------- -------------------------- ------------------
+1            1                1                           100.00                                  5                  0.00                                    500.00                                  75.00                                   575.00                                  1                    1                   2026-06-10 22:21:38.500 1                       2026-06-10 22:56:23.903    0
+
+(1 row affected)
+
+TABLA
+-----------------------------------------
+--- [SQM_GENERAL].[Tbl_PaymentOrders] ---
+
+(1 row affected)
+
+orderId     orderUserId orderDeliveryAddress orderPaymentMethodId orderSubtotal                           orderDiscount                           orderShipping                           orderTAX                                orderTotal                              orderCurrencyId orderCreatorId orderCreationDate       orderModificatorId orderModificationDate   orderStatusId
+----------- ----------- -------------------- -------------------- --------------------------------------- --------------------------------------- --------------------------------------- --------------------------------------- --------------------------------------- --------------- -------------- ----------------------- ------------------ ----------------------- -------------
+1           1           1                    1                    360.00                                  10.00                                   5.00                                    52.50                                   407.50                                  1               1              2026-06-09 22:13:00.890 NULL               NULL                    4
+2           2           2                    2                    650.00                                  0.00                                    10.00                                   97.50                                   757.50                                  1               1              2026-06-09 22:13:00.890 NULL               NULL                    4
+
+(2 rows affected)
+
+TABLA
+-----------------------------------------------
+--- [SQM_GENERAL].[Tbl_PaymentOrderDetails] ---
+
+(1 row affected)
+
+orderDetailId orderDetailOrderId orderDetailProductVariableId orderDetailPrice                        orderDetailQuantity orderDetailDiscount                     orderDetailSubTotal                     orderDetailTAX                          orderDetailTotal                        orderDetailCurrencyId orderDetailCreatorId orderDetailCreationDate orderDetailModificatorId orderDetailModificationDate orderDetailStatusId
+------------- ------------------ ---------------------------- --------------------------------------- ------------------- --------------------------------------- --------------------------------------- --------------------------------------- --------------------------------------- --------------------- -------------------- ----------------------- ------------------------ --------------------------- -------------------
+1             1                  1                            180.00                                  2                   10.00                                   350.00                                  52.50                                   402.50                                  1                     1                    2026-06-09 22:13:05.743 NULL                     NULL                        1
+2             2                  4                            650.00                                  1                   0.00                                    650.00                                  97.50                                   747.50                                  1                     1                    2026-06-09 22:13:05.743 NULL                     NULL                        1
+
+(2 rows affected)
+
+TABLA
+------------------------------------------
+--- [SQM_GENERAL].[Tbl_StockMovements] ---
+
+(1 row affected)
+
+stockMovementId stockMovementType stockMovementOrderId stockMovementReference                                                                               stockMovementDate       stockMovementCreatorId stockMovementCreationDate stockMovementModifierId stockMovementModificationDate stockMovementStatusId
+--------------- ----------------- -------------------- ---------------------------------------------------------------------------------------------------- ----------------------- ---------------------- ------------------------- ----------------------- ----------------------------- ---------------------
+
+(0 rows affected)
+
+TABLA
+------------------------------------------------
+--- [SQM_GENERAL].[Tbl_StockMovementDetails] ---
+
+(1 row affected)
+
+stockMovementDetailId stockMovementDetailMovementId stockMovementDetailOrderDetailId stockMovementDetailStockId stockMovementDetailQuantity stockMovementDetailFactoryDate stockMovementDetailExpirationDate stockMovementDetailCreatorId stockMovementDetailCreationDate stockMovementDetailModifierId stockMovementDetailModificationDate stockMovementDetailStatusId
+--------------------- ----------------------------- -------------------------------- -------------------------- --------------------------- ------------------------------ --------------------------------- ---------------------------- ------------------------------- ----------------------------- ----------------------------------- ---------------------------
+
+(0 rows affected)
+
+TABLA
+----------------------------------------
+--- [SQM_GENERAL].[Tbl_PriceHistory] ---
+
+(1 row affected)
+
+priceHistoryId priceHistoryProductVariableId priceHistoryOldPrice                    priceHistoryNewPrice                    priceHistoryChangeDate  priceHistoryModifierId
+-------------- ----------------------------- --------------------------------------- --------------------------------------- ----------------------- ----------------------
+1              5                             150.00                                  450.00                                  2026-06-13 18:12:29.760 1
+
+(1 row affected)
+
+
+Completion time: 2026-06-21T20:08:57.7869169-06:00
